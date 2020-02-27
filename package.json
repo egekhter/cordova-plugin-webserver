@@ -10,7 +10,6 @@
   "cordova": {
     "id": "cordova-plugin-webserver",
     "platforms": [
-      "ios",
       "android"
     ]
   },

@@ -25,32 +25,4 @@
       </feature>
     </config-file>
   </platform>
-
-  <platform name="ios">
-    <config-file target="config.xml" parent="/*">
-      <feature name="Webserver">
-        <param name="ios-package" value="Webserver" />
-      </feature>
-    </config-file>
-
-    <source-file src="src/ios/Webserver.swift" />
-    <source-file src="src/ios/SynchronizedDictionary.swift" />
-    <dependency id="cordova-plugin-add-swift-support" version="2.0.2"/>
-
-    <framework src="libz.tbd" />
-    <framework src="libxml2.tbd" />
-
-    <podspec>
-      <config>
-        <source url="https://github.com/CocoaPods/Specs.git"/>
-      </config>
-      <pods use-frameworks="true">
-        <pod name="GCDWebServer" spec="~> 3.5.2"/>
-      </pods>
-    </podspec>
-    
-    <!-- GCDWebserver -->
-    <header-file src="src/ios/GCDWebServer-Bridging-Header.h" type="BridgingHeader"/>
-
-  </platform>
 </plugin>
